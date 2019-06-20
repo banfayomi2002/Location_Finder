@@ -1,0 +1,5 @@
+c:\users\austin\documents\visual studio 2013\Projects\Mapping\bin\Mapping.dll.config
+c:\users\austin\documents\visual studio 2013\Projects\Mapping\bin\Mapping.dll
+c:\users\austin\documents\visual studio 2013\Projects\Mapping\bin\Mapping.pdb
+c:\users\austin\documents\visual studio 2013\Projects\Mapping\obj\Debug\Mapping.dll
+c:\users\austin\documents\visual studio 2013\Projects\Mapping\obj\Debug\Mapping.pdb

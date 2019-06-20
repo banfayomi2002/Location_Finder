@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Mapping Project</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link href="MapStyles.css" rel="stylesheet" />
+    <script src="Default.js"></script>
+</head>
+
+<body>
+
+    <div id="findplaces">
+
+    </div>
+
+    <div id="locationField">
+
+        <input id="autocompletebox" placeholder="Enter a city" onfocus="this.value='';" type="text" />
+    </div>
+
+    <div id="submitButton">
+        <input id="submit" type="button" value="Search" color="white" style="display: block; width:90px;background-color:Lavender;border: 5px solid white;" />
+    </div>
+
+    <div id="searchtype">
+        <ul>
+            <button style="display: block; line-height: 28px; width:90px;background-color:Lavender;  border: 6px solid white;" onclick="choose('bank')">BANKS</button>
+            <button style="display: block; line-height: 28px; width:90px;background-color:Lavender; border: 6px solid white;" onclick="choose('lodging')">HOTELS</button>
+            <button style="display: block; line-height: 28px; width:90px;background-color:Lavender;  border: 6px solid white;" onclick="choose('store')">STORES</button>
+            <button style="display: block; line-height: 28px; width:90px; background-color:Lavender;  border: 6px solid white;" onclick="choose('school')">SCHOOLS</button>
+        </ul>
+
+    </div>
+
+    <div id="controls">
+        <input id="country" value="Enter a country" placeholder="Enter Country" type="text" onfocus="this.value='';" hidden="true"></input>
+    </div>
+    <div id="placetotal">
+    </div>
+    <div id="map"></div>
+
+    <div id="listing">
+        <table id="resultsTable">
+            <tbody id="results"></tbody>
+        </table>
+    </div>
+
+    <div style="display: none">
+        <div id="info-content">
+            <table>
+                <tr id="url-row" class="table_row">
+                    <td id="icon" class="able_icon"></td>
+                    <td id="url"></td>
+                </tr>
+                <tr id="address-row" class="table_row">
+                    <td class="attribute_name">Address:</td>
+                    <td id="address"></td>
+                </tr>
+                <tr id="phone-row" class="table_row">
+                    <td class="attribute_name">Telephone:</td>
+                    <td id="phone"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBP-smWV2kmgmayRIbcBxZQuhOodWPuGIg&signed_in=true&libraries=places&callback=initMap"
+            async defer></script>
+</body>
+</html>
